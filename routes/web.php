@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/mohamed', [\App\Http\Controllers\TestController::class,'mohamed']);
 
-Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'printName']);
+Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'printName'])->name('printMyName');
 
 //Route::view('/mohamed','index');
 //Route::redirect('/here','/there');
