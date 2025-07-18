@@ -35,3 +35,6 @@ Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'p
 //
 //    Route::get('/printName/{name?}', 'printName')->name('printMyName');
 //});
+
+Route::get('/hello',[\App\Http\Controllers\UserController::class,'index']);
+Route::get('/hello1',[\App\Http\Controllers\Users\UserController::class,'index']);
