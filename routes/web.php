@@ -24,6 +24,14 @@ Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'p
 //Route::view('/mohamed','index');
 //Route::redirect('/here','/there');
 //Route::redirect('/there','https://github.com/Muhammed2024Salama');
-Route::get('/ahmed',function (){
-    return "Hello Ahmed Salama";
-});
+//Route::get('/ahmed',function (){
+//    return "Hello Ahmed Salama";
+//});
+
+// ROUTES GROUPS
+
+//Route::controller(\App\Http\Controllers\TestController::class)->prefix('/test')->name('test.')->group(function (){
+//    Route::get('/mohamed', 'mohamed')->name('index');
+//
+//    Route::get('/printName/{name?}', 'printName')->name('printMyName');
+//});
