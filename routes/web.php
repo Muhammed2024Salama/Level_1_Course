@@ -39,4 +39,5 @@ Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'p
 Route::get('/hello',[\App\Http\Controllers\UserController::class,'index']);
 Route::get('/hello1',[\App\Http\Controllers\Users\UserController::class,'index']);
 Route::get('/hello2',\App\Http\Controllers\SingleController::class);
-Route::resource('/posts',\App\Http\Controllers\PostController::class);
+//Route::resource('/posts',\App\Http\Controllers\PostController::class)->only(['index','show']);
+Route::resource('/posts',\App\Http\Controllers\PostController::class)->except(['index','show']);
