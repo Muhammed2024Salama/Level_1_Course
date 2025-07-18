@@ -16,3 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/mohamed', [\App\Http\Controllers\TestController::class,'mohamed']);
+
+Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'printName'])->name('printMyName');
+
+//Route::view('/mohamed','index');
+//Route::redirect('/here','/there');
+//Route::redirect('/there','https://github.com/Muhammed2024Salama');
+//Route::get('/ahmed',function (){
+//    return "Hello Ahmed Salama";
+//});
+
+// ROUTES GROUPS
+
+//Route::controller(\App\Http\Controllers\TestController::class)->prefix('/test')->name('test.')->group(function (){
+//    Route::get('/mohamed', 'mohamed')->name('index');
+//
+//    Route::get('/printName/{name?}', 'printName')->name('printMyName');
+//});
