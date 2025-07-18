@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/mohamed', [\App\Http\Controllers\TestController::class,'mohamed']);
+
+Route::get('/ahmed',function (){
+    return "Hello Ahmed Salama";
+});
