@@ -14,11 +14,8 @@ class TestController extends Controller
        return view('index');
     }
 
-    /**
-     * @return void
-     */
-    public function ahmed()
+    public function printName($name = 'DefaultName')
     {
-
+        dd("Hello $name from printName function");
     }
 }

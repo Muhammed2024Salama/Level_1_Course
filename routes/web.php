@@ -18,6 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('/mohamed', [\App\Http\Controllers\TestController::class,'mohamed']);
+
+Route::get('/printName/{name?}', [\App\Http\Controllers\TestController::class,'printName']);
+
 //Route::view('/mohamed','index');
 //Route::redirect('/here','/there');
 //Route::redirect('/there','https://github.com/Muhammed2024Salama');
